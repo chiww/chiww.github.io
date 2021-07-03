@@ -2,19 +2,14 @@
 layout: post
 title:  "ATT&CK系列-MITRE ATT&CK基本概念"
 date:   2020-09-09 22:28:28 +0800
-categories: MITRE ATT&CK 
+categories: MITRE-ATT&CK 
 tags: 网络安全 反入侵
 ---
-
-* content
-{:toc}
-
 
 
 ## 0. 引言
 
 MITRE ATT&CK 框架是最近安全圈很火的概念，从这篇文章开始，将开一个新的系列（keng），记录点ATT&CK学习记录。
-
 
 
 在介绍ATTCK之前，作为一个甲方安全从业者，请大家思考几个问题：
@@ -95,7 +90,7 @@ ATTCK观察源主要有以下几类：
 
 提到TTPs，就一定绕不过“痛苦金字塔（Pyramid Of Pain）”，痛苦金字塔描述攻守过程的失陷指标（IOCs）,TTPs 处于痛苦金字塔塔尖， 如下图：
 
-![TTPs](https://github.com/chiww/chiww.github.io/assets/what-is-ATTCK/TTPs.png)
+![TTPs](https://raw.githubusercontent.com/chiww/chiww.github.io/master/assets/what-is-ATTCK/TTPs.png)
 
 <center>痛苦金字塔</center>
 
@@ -133,7 +128,7 @@ ATT&CK中的“战术”和“技术”在一定程度上定义了生命周期�
 
 各抽象级别示意图：
 
-![abstraction](https://github.com/chiww/chiww.github.io/assets/what-is-ATTCK/abstraction.png)
+![abstraction](https://raw.githubusercontent.com/chiww/chiww.github.io/master/assets/what-is-ATTCK/abstraction.png)
 
 <center>抽象级别</center>
 
@@ -225,7 +220,7 @@ ATT&CK的基础是一组”技术“和”子技术“，这些”技术“和�
 
 ”战术“、”技术“和”子技术“之间的关系通过ATT&CK矩阵实现可视化。
 
-![matrix](https://github.com/chiww/chiww.github.io/assets/what-is-ATTCK/matrix.png)
+![matrix](https://raw.githubusercontent.com/chiww/chiww.github.io/master/assets/what-is-ATTCK/matrix.png)
 <center>战术和(子)技术矩阵</center>
 
 
@@ -236,7 +231,7 @@ ATT&CK的基础是一组”技术“和”子技术“，这些”技术“和�
 
 另外，也可以根据需要定义其他“战术”类别，以更准确地描述对手的目标。其他领域的ATT&CK建模方法的应用也可能需要新的或不同的类别来关联技术，尽管可能与现有模型中的策略定义有一些重叠。
 
-![Tactics-Example](https://github.com/chiww/chiww.github.io/assets/what-is-ATTCK/Tactics-Example.png)
+![Tactics-Example](https://raw.githubusercontent.com/chiww/chiww.github.io/master/assets/what-is-ATTCK/Tactics-Example.png)
 <center>例如：Execution战术</center>
 
 
@@ -251,7 +246,7 @@ ATT&CK的基础是一组”技术“和”子技术“，这些”技术“和�
 
 “子技术”进一步将技术描述的行为分解为关于“如何使用行为实现目标”的更具体的描述。 例如，对于”OS Credential Dumping“技术，此技术下有几种更特定的行为可以描述为”子技术“，包括”访问LSASS内存“，“安全帐户管理器”或“访问"/etc/passwd"和"/etc/shadow”。
 
-![Techniques-Example](https://github.com/chiww/chiww.github.io/assets/what-is-ATTCK/Techniques-Example.png)
+![Techniques-Example](https://raw.githubusercontent.com/chiww/chiww.github.io/master/assets/what-is-ATTCK/Techniques-Example.png)
 
 <center>例如：Command and Scripting Interpreter技术</center>
 
@@ -287,7 +282,7 @@ ATT&CK的基础是一组”技术“和”子技术“，这些”技术“和�
 
 在ATT＆CK中，会将观察到“过程”记录在“技术”和“子技术”页面的“Procedure Examples”部分。
 
-![Procedure-Example](https://github.com/chiww/chiww.github.io/assets/what-is-ATTCK/Procedure-Example.png)
+![Procedure-Example](https://raw.githubusercontent.com/chiww/chiww.github.io/master/assets/what-is-ATTCK/Procedure-Example.png)
 
 <center>例如：Command and Scripting Interpreter技术对应的Procedure，第一列是APT组织名称，第二列是该APT组织实现该技术使用的过程</center>
 
@@ -313,7 +308,7 @@ ATT＆CK在2020年增加了子技术，这标志着知识库中行为描述方�
 
 ATT&CK中“子技术”属性与“技术”基本相同，但会在ID上会在父“技术”后加后缀以示区别。
 
-![Sub-techniques-Example](https://github.com/chiww/chiww.github.io/assets/what-is-ATTCK/Sub-techniques-Example.png)
+![Sub-techniques-Example](https://raw.githubusercontent.com/chiww/chiww.github.io/master/assets/what-is-ATTCK/Sub-techniques-Example.png)
 
 <center>例如：Command and Scripting Interpreter的子技术PowerShell</center>
 
@@ -322,7 +317,7 @@ ATT&CK中“子技术”属性与“技术”基本相同，但会在ID上会在
 
 在ATT&CK中，“组(Groups)”是用来跟踪已知攻击者的对象，“组”被定义为命名的入侵集、威胁组、参与者组或活动，它们通常代表有目标的、持续的威胁活动。ATT&CK主要关注APT群体。
 
-![Groups-Example](https://github.com/chiww/chiww.github.io/assets/what-is-ATTCK/Groups-Example.png)
+![Groups-Example](https://raw.githubusercontent.com/chiww/chiww.github.io/master/assets/what-is-ATTCK/Groups-Example.png)
 
 <center>例如：APT32</center>
 
@@ -352,7 +347,7 @@ ATT&CK中“子技术”属性与“技术”基本相同，但会在ID上会在
 
 软件类别可以进一步细分，但当前分类背后的想法是展示对手如何使用工具和合法软件来执行行动，就像他们使用传统恶意软件一样。
 
-![Software-Example](https://github.com/chiww/chiww.github.io/assets/what-is-ATTCK/Software-Example.png)
+![Software-Example](https://raw.githubusercontent.com/chiww/chiww.github.io/master/assets/what-is-ATTCK/Software-Example.png)
 
 <center>例如：Cobalt Strike</center>
 
@@ -381,7 +376,7 @@ ATT＆CK中的缓解措施（Mitigations）是用于描述”如何阻止某种�
 
 截至2020年3月，Enterprise ATT＆CK中有41种缓解措施，其中包括应用程序隔离和沙箱，数据备份，执行预防和网络分段等缓解措施。缓解措施与供应商产品无关，仅描述技术的类别或类别，而不是特定的解决方案。
 
-![Mitigations-Example](https://github.com/chiww/chiww.github.io/assets/what-is-ATTCK/Mitigations-Example.png)
+![Mitigations-Example](https://raw.githubusercontent.com/chiww/chiww.github.io/master/assets/what-is-ATTCK/Mitigations-Example.png)
 
 <center>例如：Disable or Remove Feature or Program</center>
 
@@ -404,13 +399,13 @@ ATT＆CK中的缓解措施（Mitigations）是用于描述”如何阻止某种�
 上述几个组件并非单独存在，在ATT＆CK中每个组件都以某种方式与其他组件关联。
 
 它们之间的关系可以用以下图展示：
-![ATT&CK_Model_Relationships](https://github.com/chiww/chiww.github.io/assets/what-is-ATTCK/ATT&CK_Model_Relationships.jpg)
+![ATT&CK_Model_Relationships](https://raw.githubusercontent.com/chiww/chiww.github.io/master/assets/what-is-ATTCK/ATT&CK_Model_Relationships.jpg)
 
 <center>ATT&CK Model Relationships</center>
 
 例如，APT28组织使用Mimikatz对Windows LSASS进程内存进行凭据转储，可以用以下图表示
 
-![ATT&CK_Model_Relationships_Example](https://github.com/chiww/chiww.github.io/assets/what-is-ATTCK/ATT&CK_Model_Relationships_Example.jpg)
+![ATT&CK_Model_Relationships_Example](https://raw.githubusercontent.com/chiww/chiww.github.io/master/assets/what-is-ATTCK/ATT&CK_Model_Relationships_Example.jpg)
 
 <center>ATT&CK Model Relationships Example</center>
 
