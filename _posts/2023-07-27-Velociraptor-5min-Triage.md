@@ -39,7 +39,7 @@ tags: 应急响应 Velociraptor 取证
 
 ![](/assets/Velociraptor-5min-Triage/02.png)
 
-```ini
+```text
 A new process has been created.
 
 Creator Subject:

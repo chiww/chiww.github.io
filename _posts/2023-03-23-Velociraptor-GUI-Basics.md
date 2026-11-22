@@ -62,7 +62,7 @@ VQL基本语法如下图:
 
 工件格式是YAML格式，例如一个查询进程树的工件Generic.System.Pstree是这样的:
 
-```ini
+```text
 name: Custom.Artifact.Name
 description: |
    This is the human readable description of the artifact.

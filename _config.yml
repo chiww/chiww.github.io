@@ -29,6 +29,7 @@ url: "https://chiww.io" # the base hostname & protocol for your site, e.g. http:
 # github_username:  jekyll
 wechat: "REMOVED"
 
+timezone: Asia/Shanghai
 permalink: /:year/:month/:day/:title/
 
 description_footer: 公众号“安小记”，记录安全之路的小技巧、小心得、小感悟。
