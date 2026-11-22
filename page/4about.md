@@ -21,7 +21,7 @@ type: page
 ## 联系我
 
 * GitHub：[chiww](https://github.com/chiww)
-* Wechat: REMOVED
+* 微信公众号：安小记（扫描上方二维码关注）
 * Email：contact[#]chiww.io
 
 
