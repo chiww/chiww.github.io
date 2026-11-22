@@ -145,14 +145,14 @@ Process Command Line: "C:\Windows\System32\attrib.exe" C:\Windows\Help\lsass.exe
 
 2\. 恶意程序csrss.exe创建了两个服务：
 
-```sql
+```text
 "C:\Windows\System32\sc.exe" create wmiApServs binpath= "C:\Windows\system\csrss.exe -p" displayName= "WMI Performance Adaptnr" start= auto
 "C:\Windows\System32\sc.exe" create wmiApSrvs binpath= "C:\Windows\Help\csrss.exe -s" displayName= "WMI Performance Adaptor" start= auto
 ```
 
 3\. 恶意程序csrss.exe执行了以下命令：
 
-```sql
+```text
 \??\C:\Windows\system32\conhost.exe 0xffffffff -ForceV1 2
 "C:\ProgramData\Microsoft\Windows Defender\platform\4.18.2203.5-0\MpCmdRun.exe" SignatureUpdate -ScheduleJob -RestrictPrivileges -Reinvoke 1
 "C:\Windows\System32\attrib.exe" C:\Windows\Help\n.exe -s -r -a -h 1
