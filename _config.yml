@@ -24,7 +24,7 @@ email: contact@chiww.io
 description: >- # this means to ignore newlines until "baseurl:"
   公众号“安小记”，记录安全之路的小技巧、小心得、小感悟。
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://chiww.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://chiww.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
 wechat: "REMOVED"
@@ -39,7 +39,8 @@ description_footer: 公众号“安小记”，记录安全之路的小技巧、
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
 # xxxxx字符串
 baidu_tongji_id: c638877ed35a39ca3b012c835a422f05
-google_analytics_id: UA-174211404-1 # google 分析追踪id
+google_analytics_id: G-C8VV5JZPC3 # GA4 衡量 ID
+google_adsense_client: ca-pub-3651236190063163 # AdSense 发布商 ID
 
 
 # other links
@@ -68,7 +69,7 @@ tag_dir: tag/
 excerpt_separator: "\n\n\n\n"
 
 # paginate
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate, jekyll-sitemap, jekyll-feed]
 paginate: 5
 
 # Exclude from processing.
